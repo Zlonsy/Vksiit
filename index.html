@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Свистунова Вероника — разработчик WEB- и мультимедиа приложений</title>
+<meta name="description" content="Резюме-визитка: Свистунова Вероника Александровна, разработчик WEB- и мультимедиа приложений.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700;900&family=Manrope:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="progress" aria-hidden="true"><i id="progressBar"></i></div>
+
+<div class="bg" aria-hidden="true">
+<span class="deco d-yellow" style="left:1.5%;top:14%;--d:8"><span class="deco-in"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></span></span>
+<span class="deco d-blue" style="left:2.5%;top:56%;--d:-10"><span class="deco-in"><b>{ }</b></span></span>
+<span class="deco d-green" style="left:1.5%;top:84%;--d:7"><span class="deco-in"><b>;</b></span></span>
+<span class="deco d-pink" style="right:2%;top:18%;--d:-8"><span class="deco-in"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 3-1.9 5.8a2 2 0 0 1-1.3 1.3L3 12l5.8 1.9a2 2 0 0 1 1.3 1.3L12 21l1.9-5.8a2 2 0 0 1 1.3-1.3L21 12l-5.8-1.9a2 2 0 0 1-1.3-1.3z"/></svg></span></span>
+<span class="deco d-mint" style="right:1.5%;top:48%;--d:10"><span class="deco-in"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3 3 7.07 16.97 2.51-7.39 7.39-2.51L3 3z"/></svg></span></span>
+<span class="deco d-orange" style="right:2.5%;top:78%;--d:-7"><span class="deco-in"><b>#</b></span></span>
+</div>
+
+<main class="page">
+
+  <!-- 1–2. Фото и личные данные -->
+  <header class="hero card">
+    <button class="avatar" id="avatar" type="button" aria-label="Сменить цвет аватарки">
+      <svg viewBox="0 0 100 100" role="img" aria-label="Аватарка-заглушка">
+        <circle cx="50" cy="38" r="17"/>
+        <path d="M16 96c0-20 15-32 34-32s34 12 34 32z"/>
+      </svg>
+      <span class="avatar-hint">нажми на меня</span>
+    </button>
+
+    <div class="hero-info">
+      <p class="hello">Привет, я</p>
+      <h1>Свистунова<br>Вероника<br>Александровна</h1>
+      <ul class="contacts">
+        <li><span class="chip c-yellow"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>19 лет</span></li>
+        <li><a class="chip c-mint" href="tel:+79950335569"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>+7 995 033-55-69</a></li>
+        <li><button class="chip c-pink" id="copyMail" type="button" data-mail="com.charlik@gmail.com" title="Нажми, чтобы скопировать"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 5L2 7"/></svg>com.charlik@gmail.com</button></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- 3. Цель -->
+  <section class="card goal">
+    <h2>Цель резюме</h2>
+    <p class="role">Разработчик WEB- и мультимедиа приложений<span class="typing" id="typing"></span></p>
+  </section>
+
+  <!-- 4. Опыт -->
+  <section class="card">
+    <h2>Опыт работы <span class="badge">2 года</span></h2>
+    <p class="lead">Производственная практика. Везде была в должности практиканта.</p>
+    <div class="timeline">
+      <article class="job">
+        <h3>ООО «Стоматология ДанСИ»</h3>
+        <p class="job-role">Практикант</p>
+        <ul>
+          <li><mark>Поддерживала работу</mark> информационной системы организации.</li>
+        </ul>
+      </article>
+      <article class="job">
+        <h3>ООО «МалленомСистемс»</h3>
+        <p class="job-role">Практикант</p>
+        <ul>
+          <li><mark>Поддерживала работу</mark> системы организации.</li>
+          <li>Участвовала в <mark>разработке продукта</mark> и помогала в его доработке.</li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <!-- 5. Навыки -->
+  <section class="card">
+    <h2>Профессиональные навыки</h2>
+
+    <h3 class="sub">Hard skills</h3>
+    <div class="skills">
+      <div class="skill">
+        <h4>Веб-технологии</h4>
+        <ul>
+          <li><b>HTML5, CSS3:</b> семантическая и адаптивная вёрстка (Flexbox, Grid, CSS-переменные)</li>
+          <li><b>JavaScript (ES6+):</b> DOM, асинхронность, простые интерактивные сценарии</li>
+          <li><b>PHP:</b> скрипты для форм, работа с <code>$_POST</code> и <code>$_GET</code>, вывод данных</li>
+        </ul>
+      </div>
+      <div class="skill">
+        <h4>Дизайн и графика</h4>
+        <ul>
+          <li><b>Figma:</b> проектирование интерфейсов, компоненты, автолейаут, макеты под вёрстку</li>
+          <li><b>Adobe Photoshop:</b> оптимизация изображений, цветокоррекция, графика для веба</li>
+        </ul>
+      </div>
+      <div class="skill">
+        <h4>Разработка и контроль версий</h4>
+        <ul>
+          <li><b>Git:</b> clone, commit, push, branch; работа с репозиториями и понимание workflow</li>
+          <li><b>npm / Node.js:</b> запуск локального сервера, базовая автоматизация</li>
+        </ul>
+      </div>
+      <div class="skill">
+        <h4>Оптимизация и тестирование</h4>
+        <ul>
+          <li>Минификация CSS/JS, сжатие изображений, ускорение загрузки страниц</li>
+          <li>Проверка валидности HTML/CSS, базовая кроссбраузерность</li>
+        </ul>
+      </div>
+    </div>
+
+    <h3 class="sub">Soft skills</h3>
+    <div class="soft">
+      <div class="soft-item"><span class="icon i-pink"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></span><div><h4>Командная работа</h4><p><mark>Согласовываю правки</mark> с дизайнером и старшим разработчиком, фиксирую замечания в задачах, уточняю детали макетов, чтобы не переделывать.</p></div></div>
+      <div class="soft-item"><span class="icon i-yellow"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l2 2"/><path d="M9 2h6"/></svg></span><div><h4>Тайм-менеджмент</h4><p><mark>Разбиваю большие задачи</mark> (например, вёрстку лендинга) на этапы, слежу за сроками и сдаю промежуточные результаты ради обратной связи.</p></div></div>
+      <div class="soft-item"><span class="icon i-mint"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m8 2 1.88 1.88"/><path d="M14.12 3.88 16 2"/><path d="M9 7.13v-1a3 3 0 1 1 6 0v1"/><path d="M12 20c-3.3 0-6-2.7-6-6v-3a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v3c0 3.3-2.7 6-6 6"/><path d="M12 20v-9"/><path d="M6.5 9C4.6 8.8 3 7.1 3 5"/><path d="M6 13H2"/><path d="M3 21c0-2.1 1.7-3.9 3.8-4"/><path d="M21 5c0 2.1-1.6 3.8-3.5 4"/><path d="M22 13h-4"/><path d="M17.2 17c2.1.1 3.8 1.9 3.8 4"/></svg></span><div><h4>Решение проблем</h4><p><mark>Нахожу и исправляю ошибки</mark> вёрстки и кроссбраузерные баги; подбираю альтернативы, если элемент макета сложно реализовать.</p></div></div>
+      <div class="soft-item"><span class="icon i-blue"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"/><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/></svg></span><div><h4>Обучаемость и инициатива</h4><p><mark>Быстро осваиваю</mark> Git, npm, Figma и сразу применяю в работе; самостоятельно запускаю пет-проекты.</p></div></div>
+      <div class="soft-item"><span class="icon i-orange"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="13.5" cy="6.5" r=".6"/><circle cx="17.5" cy="10.5" r=".6"/><circle cx="8.5" cy="7.5" r=".6"/><circle cx="6.5" cy="12.5" r=".6"/><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.93 0 1.65-.75 1.65-1.69 0-.44-.18-.84-.44-1.12-.29-.29-.44-.65-.44-1.13a1.64 1.64 0 0 1 1.67-1.67h2c3.05 0 5.55-2.5 5.55-5.55C21.97 6.01 17.46 2 12 2z"/></svg></span><div><h4>Креативность</h4><p>Предлагаю варианты, когда требования неоднозначны, и ищу <mark>нестандартные, но реализуемые</mark> способы улучшить интерфейс и UX.</p></div></div>
+    </div>
+  </section>
+
+  <!-- 6. Образование -->
+  <section class="card edu">
+    <h2>Образование</h2>
+    <div class="edu-body">
+      <div class="edu-year">2027<small>выпуск</small></div>
+      <div>
+        <h3>АПОУ ВО «Вологодский колледж связи и информационных технологий»</h3>
+        <p>Специальность <mark>09.02.07</mark> «Информационные системы и программирование»</p>
+        <p class="job-role">Квалификация: разработчик WEB- и мультимедиа приложений</p>
+      </div>
+    </div>
+    <div class="courses-wrap">
+      <h3 class="sub">Курсы</h3>
+      <div class="courses">
+        <article class="course">
+          <span class="icon i-yellow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg></span>
+          <div>
+            <h4>Интерактивный веб-дизайн</h4>
+            <p>Онлайн-школа веб-дизайна <mark>Yudaev School</mark> (Школа Юдаева)</p>
+          </div>
+        </article>
+        <article class="course">
+          <span class="icon i-pink"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 19 7-7 3 3-7 7-3-3z"/><path d="m18 13-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/><path d="m2 2 7.586 7.586"/><circle cx="11" cy="11" r="2"/></svg></span>
+          <div>
+            <h4>Графический дизайн</h4>
+            <p>Школа <mark>UNID</mark></p>
+          </div>
+        </article>
+        <!-- Сюда можно добавить ещё курс: скопируйте блок <article class="course"> выше -->
+      </div>
+    </div>
+
+  </section>
+
+  <!-- 7. Личные качества -->
+  <section class="card">
+    <h2>Личные качества</h2>
+    <ul class="tags" id="tags">
+      <li>Аналитический склад ума</li>
+      <li>Инициативность</li>
+      <li>Самостоятельность</li>
+      <li>Внимание к деталям</li>
+      <li>Нестандартное мышление</li>
+      <li>Ориентация на результат</li>
+      <li>Доведение проектов до реализации</li>
+      <li>Целеустремлённость</li>
+      <li>Интерес к новым технологиям</li>
+      <li>Готовность развивать навыки</li>
+    </ul>
+  </section>
+
+  <!-- 8. Дополнительная информация -->
+  <section class="card">
+    <h2>Дополнительная информация</h2>
+    <div class="projects">
+      <article class="project p-blue">
+        <span class="icon i-white"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="11" width="18" height="10" rx="2"/><circle cx="12" cy="5" r="2"/><path d="M12 7v4"/><path d="M8 16h.01"/><path d="M16 16h.01"/></svg></span>
+        <h3>Telegram-бот</h3>
+        <p>Реализовала <mark>базовый функционал</mark>: обработка команд, ответы по сценарию, интеграция с простыми API.</p>
+        <p class="stack">Node.js · библиотека для Telegram API</p>
+      </article>
+      <article class="project p-green">
+        <span class="icon i-white"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="2" width="14" height="20" rx="3"/><path d="M12 18h.01"/></svg></span>
+        <h3>Пробное Android-приложение</h3>
+        <p>Собрала <mark>прототип</mark>: интерфейс, логика экранов, работа с простыми данными. Цель — проверить идею и понять, как устроена мобильная разработка.</p>
+      </article>
+      <article class="project p-orange">
+        <span class="icon i-white"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z"/></svg></span>
+        <h3>Вайбкодинг</h3>
+        <p>Использую подход для <mark>быстрой проверки гипотез</mark> и прототипирования: сборка MVP, тесты идей, быстрые итерации по обратной связи.</p>
+      </article>
+    </div>
+  </section>
+
+  <footer class="foot card">
+    <p>Спасибо, что заглянули!</p>
+    <button class="chip c-pink btn-big" id="confetti" type="button"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 3-1.9 5.8a2 2 0 0 1-1.3 1.3L3 12l5.8 1.9a2 2 0 0 1 1.3 1.3L12 21l1.9-5.8a2 2 0 0 1 1.3-1.3L21 12l-5.8-1.9a2 2 0 0 1-1.3-1.3z"/></svg>Запустить конфетти</button>
+  </footer>
+</main>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<canvas id="confettiCanvas" aria-hidden="true"></canvas>
+<script src="script.js"></script>
+</body>
+</html>
